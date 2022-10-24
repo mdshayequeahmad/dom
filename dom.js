@@ -29,20 +29,44 @@
 
 
 //GET ELEMENTS BY CLASSNAME
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
-items[1].textContent = 'Hello 2';
-items[1].style.fontWeight = 'bold';
-items[1].style.backgroundColor = 'yellow';
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.backgroundColor = 'yellow';
 
 // for (var i=0; i<items.length; i++) {
 //     items[i].style.backgroundColor = '#b5af9e';
 // }
 
 
-items[2].style.backgroundColor = 'green';
+// items[2].style.backgroundColor = 'green';
 
-for (var i=0; i<items.length; i++) {
-    items[i].style.fontWeight = 'bold';
+// for (var i=0; i<items.length; i++) {
+//     items[i].style.fontWeight = 'bold';
+// }
+
+
+//GET ELEMENTS BY TAGNAME
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent = 'Hello 2';
+li[1].style.fontWeight = 'bold';
+var li = document.getElementsByTagName('li');
+li[1].style.backgroundColor = 'yellow';
+
+for (var i=0; i<li.length; i++) {
+    li[i].style.backgroundColor = '#b5af9e';
 }
+
+
+var new_li = document.getElementsByClassName('new-li');
+new_li[0].textContent = 'Hello 5';
+new_li[0].style.fontWeight = 'bold';
+
+
+var li = document.getElementsByTagName('li');
+li[4].textContent = 'Hello 10';
+li[4].style.backgroundColor = 'red';
